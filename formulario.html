@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário Front-End</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barra de Navegação -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="formulario.html" aria-label="Ir para o formulário">Formulário</a></li>
+      <li><a href="respostas.html" aria-label="Ver respostas registradas">Respostas</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <div class="container">
+    <h1>Questionário: Dificuldades na Criação de Sites Estáticos</h1>
+    <form id="questionario">
+      <!-- Informações do Participante -->
+      <fieldset>
+        <legend>Informações do Participante</legend>
+        <label for="nome">Nome (opcional):</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="10" placeholder="Digite sua idade">
+
+        <label for="nivel">Nível de experiência:</label>
+        <select id="nivel" name="nivel">
+          <option value="iniciante">Iniciante</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="avancado">Avançado</option>
+        </select>
+      </fieldset>
+
+      <!-- Experiência com Front-End -->
+      <fieldset>
+        <legend>Experiência com Front-End</legend>
+        <p>Você já criou um site estático antes?</p>
+        <input type="radio" id="sim" name="experiencia" value="sim">
+        <label for="sim">Sim</label>
+        <input type="radio" id="nao" name="experiencia" value="nao">
+        <label for="nao">Não</label>
+
+        <label for="ferramentas">Quais ferramentas você usou?</label>
+        <input type="text" id="ferramentas" name="ferramentas" placeholder="Ex.: HTML, CSS, JavaScript">
+      </fieldset>
+
+      <!-- Principais Dificuldades -->
+      <fieldset>
+        <legend>Principais Dificuldades</legend>
+        <p>Selecione suas dificuldades:</p>
+        <input type="checkbox" id="html" name="dificuldades" value="Estruturar o HTML">
+        <label for="html">Estruturar o HTML</label><br>
+        <input type="checkbox" id="css" name="dificuldades" value="Estilizar com CSS">
+        <label for="css">Estilizar com CSS</label><br>
+        <input type="checkbox" id="responsivo" name="dificuldades" value="Tornar o site responsivo">
+        <label for="responsivo">Tornar o site responsivo</label><br>
+        <input type="checkbox" id="javascript" name="dificuldades" value="Usar JavaScript">
+        <label for="javascript">Usar JavaScript</label>
+      </fieldset>
+
+      <!-- Recursos e Sugestões -->
+      <fieldset>
+        <legend>Recursos e Sugestões</legend>
+        <label for="recursos">O que poderia te ajudar?</label>
+        <textarea id="recursos" name="recursos" rows="4" placeholder="Descreva suas sugestões"></textarea>
+      </fieldset>
+
+      <!-- Botão de Enviar -->
+      <button type="submit">Enviar Respostas</button>
+    </form>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

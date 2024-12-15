@@ -1,0 +1,28 @@
+[
+  {
+    "nome": "willian",
+    "idade": "31",
+    "nivel": "intermediario",
+    "experiencia": "sim",
+    "ferramentas": "python, html, css, javascrip, sql",
+    "dificuldades": [
+      "Tornar o site responsivo",
+      "Usar JavaScript"
+    ],
+    "recursos": "exercícios de fixação do conteúdo explicado "
+  },
+  {
+    "nome": "Grasiela",
+    "idade": "21",
+    "nivel": "iniciante",
+    "experiencia": "nao",
+    "ferramentas": "html, css",
+    "dificuldades": [
+      "Estruturar o HTML",
+      "Estilizar com CSS",
+      "Tornar o site responsivo",
+      "Usar JavaScript"
+    ],
+    "recursos": "videos aula com mais detalhamento de um passo a passo de como fazer tudo isso"
+  }
+]
